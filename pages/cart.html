@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart | Crocharmi</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         NAVBAR
+         ======================================== -->
+
+    <header class="navbar">
+
+        <div class="navbar-container">
+
+            <a href="home.html" class="logo">
+                CROCHARMI
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="home.html">
+                    Home
+                </a>
+
+                <a href="shop.html">
+                    Shop
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="cart.html" class="active">
+                    Cart
+                </a>
+
+                <div
+                    id="auth-links"
+                    class="auth-links"
+                ></div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================
+         CART PAGE
+         ======================================== -->
+
+    <main class="cart-page">
+
+        <div class="container">
+
+            <div class="cart-header">
+
+                <p class="section-label">
+                    YOUR ORDER
+                </p>
+
+                <h1>
+                    Shopping Cart
+                </h1>
+
+                <p>
+                    Review your selected handmade pieces
+                    before placing your order.
+                </p>
+
+            </div>
+
+
+            <!-- ========================================
+                 EMPTY CART
+                 ======================================== -->
+
+            <div
+                id="empty-cart"
+                class="empty-cart"
+            >
+
+                <div class="empty-cart-icon">
+                    🧶
+                </div>
+
+                <h2>
+                    Your cart is empty
+                </h2>
+
+                <p>
+                    You haven't added any crochet pieces yet.
+                </p>
+
+                <a
+                    href="shop.html"
+                    class="btn btn-primary"
+                >
+                    Browse the Shop
+                </a>
+
+            </div>
+
+
+            <!-- ========================================
+                 CART CONTENT
+                 ======================================== -->
+
+            <section
+                id="cart-content"
+                class="cart-content hidden"
+            >
+
+                <div class="cart-layout">
+
+                    <!-- ====================================
+                         CART ITEMS
+                         ==================================== -->
+
+                    <div class="cart-items-section">
+
+                        <div class="cart-items-heading">
+
+                            <h2>
+                                Your Items
+                            </h2>
+
+                            <span id="cart-item-count">
+                                0 items
+                            </span>
+
+                        </div>
+
+                        <div
+                            id="cart-items"
+                            class="cart-items"
+                        ></div>
+
+                        <button
+                            type="button"
+                            id="clear-cart"
+                            class="clear-cart-button"
+                        >
+                            Clear Cart
+                        </button>
+
+                    </div>
+
+
+                    <!-- ====================================
+                         ORDER SUMMARY
+                         ==================================== -->
+
+                    <aside class="order-summary">
+
+                        <h2>
+                            Order Summary
+                        </h2>
+
+                        <div class="summary-row">
+
+                            <span>
+                                Items
+                            </span>
+
+                            <span id="summary-items">
+                                0
+                            </span>
+
+                        </div>
+
+                        <div class="summary-row">
+
+                            <span>
+                                Subtotal
+                            </span>
+
+                            <span id="summary-subtotal">
+                                ₱0
+                            </span>
+
+                        </div>
+
+                        <div class="summary-row summary-delivery">
+
+                            <span>
+                                Delivery
+                            </span>
+
+                            <span>
+                                Calculated at checkout
+                            </span>
+
+                        </div>
+
+                        <div class="summary-divider"></div>
+
+                        <div class="summary-total">
+
+                            <span>
+                                Total
+                            </span>
+
+                            <span id="summary-total">
+                                ₱0
+                            </span>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            id="checkout-button"
+                            class="btn btn-primary checkout-button"
+                        >
+                            Proceed to Checkout
+                        </button>
+
+                        <p class="checkout-note">
+                            Delivery details and final order information
+                            will be completed at checkout.
+                        </p>
+
+                    </aside>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div>
+
+                    <h3>CROCHARMI</h3>
+
+                    <p>
+                        Handmade crochet pieces
+                        made with care.
+                    </p>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <a href="home.html">
+                        Home
+                    </a>
+
+                    <a href="shop.html">
+                        Shop
+                    </a>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="cart.html">
+                        Cart
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Crocharmi. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/shared/navbar.js"></script>
+    <script src="../js/shared/toast.js"></script>
+    <script src="../js/cart.js"></script>
+
+</body>
+</html>

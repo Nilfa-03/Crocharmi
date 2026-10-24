@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Shop | Crocharmi</title>
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/shop.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/responsive.css"
+    >
+
+
+    <!-- Authentication Protection -->
+
+    <script src="../js/shared/auth-guard.js"></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================
+         NAVIGATION
+         ================================ -->
+
+    <header class="navbar">
+
+        <div class="navbar-container">
+
+
+            <a
+                href="home.html"
+                class="logo"
+            >
+                CROCHARMI
+            </a>
+
+
+            <nav class="nav-links">
+
+
+                <a href="home.html">
+                    Home
+                </a>
+
+
+                <a
+                    href="shop.html"
+                    class="active"
+                >
+                    Shop
+                </a>
+
+
+                <a href="about.html">
+                    About
+                </a>
+
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+
+                <div
+                    id="auth-links"
+                    class="auth-links"
+                ></div>
+
+
+            </nav>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================================
+         MAIN CONTENT
+         ================================ -->
+
+    <main>
+
+
+        <!-- ================================
+             SHOP HEADER
+             ================================ -->
+
+        <section class="shop-header">
+
+            <div class="container">
+
+                <p class="section-label">
+                    OUR COLLECTION
+                </p>
+
+
+                <h1>
+                    Handmade Crochet Pieces
+                </h1>
+
+
+                <p>
+                    Explore our collection of carefully
+                    handmade crochet pieces for gifts,
+                    everyday use, and personal collections.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================================
+             SHOP CONTENT
+             ================================ -->
+
+        <section class="shop-content">
+
+            <div class="container">
+
+
+                <!-- ================================
+                     SHOP TOOLBAR
+                     ================================ -->
+
+                <div class="shop-toolbar">
+
+                    <div class="category-filters">
+
+
+                        <button
+                            type="button"
+                            class="category-btn active"
+                            data-category="all"
+                        >
+                            All
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="category-btn"
+                            data-category="keychains"
+                        >
+                            Keychains
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="category-btn"
+                            data-category="flowers"
+                        >
+                            Flowers
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="category-btn"
+                            data-category="bags"
+                        >
+                            Bags
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================================
+                     SEARCH
+                     ================================ -->
+
+                <div class="shop-search">
+
+                    <input
+                        type="search"
+                        id="product-search"
+                        placeholder="Search crochet products..."
+                        aria-label="Search products"
+                    >
+
+                </div>
+
+
+
+                <!-- ================================
+                     PRODUCT GRID
+                     ================================ -->
+
+                <div
+                    id="product-grid"
+                    class="product-grid"
+                >
+
+
+                    <!-- ============================
+                         PRODUCT 1
+                         ============================ -->
+
+                    <article
+                        class="product-card"
+                        data-category="keychains"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="../assets/images/keychain.jpg"
+                                alt="Crochet Keychain"
+                            >
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Keychains
+                            </p>
+
+
+                            <h2>
+                                Crochet Keychain
+                            </h2>
+
+
+                            <p class="product-price">
+                                ₱150
+                            </p>
+
+
+                            <a
+                                href="product-details.html?id=keychain"
+                                class="btn btn-secondary product-button"
+                            >
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ============================
+                         PRODUCT 2
+                         ============================ -->
+
+                    <article
+                        class="product-card"
+                        data-category="flowers"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="../assets/images/flower.jpg"
+                                alt="Crochet Flower"
+                            >
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Flowers
+                            </p>
+
+
+                            <h2>
+                                Crochet Flower
+                            </h2>
+
+
+                            <p class="product-price">
+                                ₱250
+                            </p>
+
+
+                            <a
+                                href="product-details.html?id=flower"
+                                class="btn btn-secondary product-button"
+                            >
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ============================
+                         PRODUCT 3
+                         ============================ -->
+
+                    <article
+                        class="product-card"
+                        data-category="bags"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="../assets/images/mini-bag.jpg"
+                                alt="Mini Crochet Bag"
+                            >
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Bags
+                            </p>
+
+
+                            <h2>
+                                Mini Crochet Bag
+                            </h2>
+
+
+                            <p class="product-price">
+                                ₱450
+                            </p>
+
+
+                            <a
+                                href="product-details.html?id=bag"
+                                class="btn btn-secondary product-button"
+                            >
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ============================
+                         PRODUCT 4
+                         ============================ -->
+
+                    <article
+                        class="product-card"
+                        data-category="keychains"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="../assets/images/heart-keychain.jpg"
+                                alt="Crochet Heart Keychain"
+                            >
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Keychains
+                            </p>
+
+
+                            <h2>
+                                Crochet Heart Keychain
+                            </h2>
+
+
+                            <p class="product-price">
+                                ₱180
+                            </p>
+
+
+                            <a
+                                href="product-details.html?id=heart-keychain"
+                                class="btn btn-secondary product-button"
+                            >
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ============================
+                         PRODUCT 5
+                         ============================ -->
+
+                    <article
+                        class="product-card"
+                        data-category="flowers"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="../assets/images/tulip.jpg"
+                                alt="Crochet Tulip"
+                            >
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Flowers
+                            </p>
+
+
+                            <h2>
+                                Crochet Tulip
+                            </h2>
+
+
+                            <p class="product-price">
+                                ₱280
+                            </p>
+
+
+                            <a
+                                href="product-details.html?id=tulip"
+                                class="btn btn-secondary product-button"
+                            >
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ============================
+                         PRODUCT 6
+                         ============================ -->
+
+                    <article
+                        class="product-card"
+                        data-category="bags"
+                    >
+
+                        <div class="product-image">
+
+                            <img
+                                src="../assets/images/mini-tote.jpg"
+                                alt="Crochet Mini Tote"
+                            >
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Bags
+                            </p>
+
+
+                            <h2>
+                                Crochet Mini Tote
+                            </h2>
+
+
+                            <p class="product-price">
+                                ₱500
+                            </p>
+
+
+                            <a
+                                href="product-details.html?id=tote"
+                                class="btn btn-secondary product-button"
+                            >
+                                View Product
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- ================================
+                     NO PRODUCTS MESSAGE
+                     ================================ -->
+
+                <div
+                    id="no-products"
+                    class="no-products hidden"
+                >
+                    <p>
+                        No products found.
+                    </p>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================================
+         FOOTER
+         ================================ -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div>
+
+                <div class="footer-brand">
+                    CROCHARMI
+                </div>
+
+
+                <p class="footer-description">
+                    Handmade crochet pieces made with care.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+
+                <a href="home.html">
+                    Home
+                </a>
+
+
+                <a href="shop.html">
+                    Shop
+                </a>
+
+
+                <a href="about.html">
+                    About
+                </a>
+
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+
+            </div>
+
+
+
+            <p class="footer-copyright">
+                © 2026 Crocharmi
+            </p>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================================
+         JAVASCRIPT
+         ================================ -->
+
+    <script src="../js/shared/navbar.js"></script>
+
+    <script src="../js/shared/toast.js"></script>
+
+    <script src="../js/shop.js"></script>
+
+
+</body>
+
+</html>

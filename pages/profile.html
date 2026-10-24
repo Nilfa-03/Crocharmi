@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile | Crocharmi</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Profile CSS -->
+    <link rel="stylesheet" href="../css/profile.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../css/responsive.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Authentication Guard -->
+    <script src="../js/shared/auth-guard.js"></script>
+</head>
+
+<body class="profile-page-body">
+
+    <!-- ========================================
+         NAVBAR
+    ======================================== -->
+
+    <header class="navbar">
+
+        <div class="navbar-container">
+
+            <a href="home.html" class="logo">
+                CROCHARMI
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="home.html">
+                    Home
+                </a>
+
+                <a href="shop.html">
+                    Shop
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+                <div id="auth-links" class="auth-links"></div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================
+         PROFILE PAGE
+    ======================================== -->
+
+    <main class="profile-page">
+
+        <div class="profile-container">
+
+            <!-- ========================================
+                 PROFILE HEADER
+            ======================================== -->
+
+            <div class="profile-header">
+
+                <h1>
+                    My Profile
+                </h1>
+
+                <p>
+                    Manage your Crocharmi account information.
+                </p>
+
+            </div>
+
+
+            <!-- ========================================
+                 PROFILE DETAILS CARD
+            ======================================== -->
+
+            <div class="profile-card">
+
+                <!-- Profile Photo -->
+
+                <div class="profile-photo-section">
+
+                    <div
+                        class="profile-photo"
+                        id="profile-photo"
+                    >
+
+                        <span id="profile-initial">
+                            U
+                        </span>
+
+                        <img
+                            id="profile-image"
+                            src=""
+                            alt="Profile Picture"
+                        >
+
+                    </div>
+
+
+                    <!-- User Name -->
+
+                    <h2
+                        class="profile-user-name"
+                        id="profile-user-name"
+                    >
+                        User
+                    </h2>
+
+
+                    <!-- Photo Actions -->
+
+                    <div class="profile-photo-actions">
+
+                        <label for="profile-image-input">
+                            Change Photo
+                        </label>
+
+                        <input
+                            type="file"
+                            id="profile-image-input"
+                            accept="image/png,image/jpeg,image/webp"
+                        >
+
+                        <button
+                            type="button"
+                            id="remove-photo"
+                        >
+                            Remove Photo
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ========================================
+                     PERSONAL INFORMATION
+                ======================================== -->
+
+                <div class="profile-section">
+
+                    <h2 class="profile-section-title">
+                        Profile Details
+                    </h2>
+
+
+                    <form
+                        id="profile-form"
+                        class="profile-form"
+                    >
+
+                        <!-- Name -->
+
+                        <div class="profile-form-group">
+
+                            <label for="profile-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="profile-name"
+                                name="name"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Email -->
+
+                        <div class="profile-form-group">
+
+                            <label for="profile-email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="profile-email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- Phone -->
+
+                        <div class="profile-form-group">
+
+                            <label for="profile-phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="profile-phone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                            >
+
+                        </div>
+
+
+                        <!-- Address -->
+
+                        <div class="profile-form-group">
+
+                            <label for="profile-address">
+                                Address
+                            </label>
+
+                            <input
+                                type="text"
+                                id="profile-address"
+                                name="address"
+                                placeholder="Enter your address"
+                            >
+
+                        </div>
+
+
+                        <!-- Save -->
+
+                        <div class="profile-form-group full-width">
+
+                            <div class="profile-save">
+
+                                <button
+                                    type="submit"
+                                >
+                                    Save Changes
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================================
+                 MY ORDERS / ACCOUNT / SIGN OUT CARD
+            ======================================== -->
+
+            <div class="profile-card profile-extra-card">
+
+
+                <!-- ========================================
+                     MY ORDERS
+                ======================================== -->
+
+                <div class="profile-extra-section">
+
+                    <h2>
+                        My Orders
+                    </h2>
+
+                    <p>
+                        View your previous orders.
+                    </p>
+
+                    <a
+                        href="orders.html"
+                        class="profile-link"
+                    >
+                        View Orders →
+                    </a>
+
+                </div>
+
+
+                <!-- ========================================
+                     ACCOUNT STATUS
+                ======================================== -->
+
+                <div class="profile-extra-section">
+
+                    <h2>
+                        Account Status
+                    </h2>
+
+                    <p>
+                        Your Crocharmi account is active.
+                    </p>
+
+                    <span class="profile-status">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <!-- ========================================
+                     SIGN OUT
+                ======================================== -->
+
+                <div class="profile-extra-section">
+
+                    <h2>
+                        Sign Out
+                    </h2>
+
+                    <p>
+                        Sign out of your Crocharmi account.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="logout-btn"
+                        id="logout-btn"
+                    >
+                        Logout
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ========================================
+         TOAST
+    ======================================== -->
+
+    <div id="crocharmi-toast"></div>
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ======================================== -->
+
+    <script src="../js/shared/toast.js"></script>
+
+    <script src="../js/shared/navbar.js"></script>
+
+    <script src="../js/profile.js"></script>
+
+</body>
+</html>

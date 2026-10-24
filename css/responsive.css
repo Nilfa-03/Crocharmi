@@ -1,0 +1,324 @@
+/* ========================================
+   CROCHARMI
+   Responsive Styles
+   ======================================== */
+
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .navbar-container {
+
+        min-height: 65px;
+
+        gap: 20px;
+    }
+
+
+    .nav-links {
+
+        gap: 18px;
+    }
+
+
+    .nav-links a {
+
+        font-size: 13px;
+    }
+
+
+    .auth-links {
+
+        gap: 10px;
+    }
+
+
+    .auth-links a {
+
+        font-size: 13px;
+    }
+
+
+    .footer-container {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .navbar-container {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding: 15px 0;
+
+        gap: 12px;
+    }
+
+
+    .nav-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+
+    .auth-links {
+
+        justify-content: center;
+    }
+
+
+    .section-title {
+
+        font-size: 28px;
+    }
+
+
+    .footer {
+
+        margin-top: 50px;
+    }
+
+
+    .footer-container {
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+}
+
+/* ========================================
+   HOMEPAGE RESPONSIVE
+   ======================================== */
+
+
+@media (max-width: 768px) {
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+
+        padding: 55px 0 70px;
+    }
+
+
+    .hero-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        text-align: center;
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 46px;
+    }
+
+
+    .hero-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .hero-actions {
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .hero-visual {
+
+        order: -1;
+    }
+
+
+    .hero-image-placeholder {
+
+        max-width: 380px;
+    }
+
+
+    /* ---------- Products ---------- */
+
+    .product-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- About ---------- */
+
+    .about-preview-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .about-preview-heading h2 {
+
+        font-size: 34px;
+    }
+
+
+    .about-preview-text {
+
+        padding-top: 0;
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer-links {
+
+        order: 2;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+
+        padding: 45px 0 60px;
+    }
+
+
+    .hero-container {
+
+        width: 88%;
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 39px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .hero-description {
+
+        font-size: 14px;
+    }
+
+
+    .hero-actions {
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .hero-actions .btn {
+
+        width: 100%;
+    }
+
+
+    .hero-image-placeholder {
+
+        max-width: 100%;
+    }
+
+
+    /* ---------- Featured ---------- */
+
+    .featured {
+
+        padding: 65px 0;
+    }
+
+
+    .product-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- About ---------- */
+
+    .about-preview {
+
+        padding: 70px 0;
+    }
+
+
+    .about-preview-container {
+
+        width: 88%;
+    }
+
+
+    .about-preview-heading h2 {
+
+        font-size: 30px;
+    }
+
+
+    /* ---------- CTA ---------- */
+
+    .home-cta {
+
+        padding: 70px 20px;
+    }
+
+
+    .home-cta h2 {
+
+        font-size: 28px;
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .footer-container {
+
+        width: 88%;
+    }
+
+
+    .footer-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+}

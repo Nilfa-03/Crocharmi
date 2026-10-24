@@ -1,0 +1,485 @@
+/* ========================================
+   CROCHARMI
+   ABOUT PAGE
+   ======================================== */
+
+
+/* ========================================
+   ABOUT HERO
+   ======================================== */
+
+.about-page-hero {
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+    background-color: var(--beige);
+
+}
+
+
+.about-page-hero .container {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+}
+
+
+.about-page-hero h1 {
+
+    margin: 12px 0 20px;
+
+    color: var(--brown-dark);
+
+    font-size: clamp(2rem, 5vw, 3.2rem);
+
+    font-weight: 600;
+
+    line-height: 1.15;
+
+}
+
+
+.about-hero-description {
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: var(--secondary-text);
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* ========================================
+   OUR STORY
+   ======================================== */
+
+.about-story {
+
+    padding: 90px 20px;
+
+    background-color: var(--white);
+
+}
+
+
+.about-story-container {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+
+}
+
+
+.about-story-content {
+
+    max-width: 520px;
+
+}
+
+
+.about-story-content h2 {
+
+    margin: 12px 0 22px;
+
+    color: var(--brown-dark);
+
+    font-size: 2rem;
+
+    font-weight: 600;
+
+    line-height: 1.25;
+
+}
+
+
+.about-story-content p:not(.section-label) {
+
+    margin: 0 0 18px;
+
+    color: var(--secondary-text);
+
+    font-size: 0.95rem;
+
+    line-height: 1.75;
+
+}
+
+
+.about-story-image {
+
+    width: 100%;
+
+    height: 480px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background-color: var(--beige);
+
+}
+
+
+.about-story-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+.about-story-image:hover img {
+
+    transform: scale(1.02);
+
+}
+
+
+
+/* ========================================
+   WHAT WE MAKE
+   ======================================== */
+
+.about-values {
+
+    padding: 90px 20px;
+
+    background-color: var(--color-background);
+
+}
+
+
+.about-values .container {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+}
+
+
+.about-values .section-heading {
+
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+
+.about-values-grid {
+
+    max-width: 1000px;
+
+    margin: 45px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.about-value-card {
+
+    padding: 30px;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+
+}
+
+
+.about-value-card:hover {
+
+    transform: translateY(-3px);
+
+    border-color: var(--accent);
+
+}
+
+
+.about-value-number {
+
+    margin-bottom: 20px;
+
+    color: var(--accent);
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+
+}
+
+
+.about-value-card h3 {
+
+    margin: 0 0 12px;
+
+    color: var(--brown-dark);
+
+    font-size: 1.1rem;
+
+    font-weight: 600;
+
+}
+
+
+.about-value-card p {
+
+    margin: 0;
+
+    color: var(--secondary-text);
+
+    font-size: 0.9rem;
+
+    line-height: 1.65;
+
+}
+
+
+
+/* ========================================
+   CALL TO ACTION
+   ======================================== */
+
+.about-cta {
+
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background-color: var(--beige);
+
+}
+
+
+.about-cta .container {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+}
+
+
+.about-cta h2 {
+
+    margin: 12px 0 15px;
+
+    color: var(--brown-dark);
+
+    font-size: 2rem;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+
+}
+
+
+.about-cta p:not(.section-label) {
+
+    max-width: 550px;
+
+    margin: 0 auto 25px;
+
+    color: var(--secondary-text);
+
+    line-height: 1.7;
+
+}
+
+
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.footer-brand-section {
+
+    max-width: 300px;
+
+}
+
+
+.footer-description {
+
+    margin-top: 8px;
+
+    color: var(--secondary-text);
+
+    font-size: 0.85rem;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 800px) {
+
+
+    /* Story */
+
+    .about-story-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+
+    .about-story-content {
+
+        max-width: 100%;
+
+    }
+
+
+    .about-story-image {
+
+        height: 400px;
+
+    }
+
+
+    /* Values */
+
+    .about-values-grid {
+
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+
+    /* Hero */
+
+    .about-page-hero {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .about-page-hero h1 {
+
+        font-size: 2rem;
+
+    }
+
+
+    /* Story */
+
+    .about-story {
+
+        padding: 65px 20px;
+
+    }
+
+
+    .about-story-content h2 {
+
+        font-size: 1.7rem;
+
+    }
+
+
+    .about-story-image {
+
+        height: 320px;
+
+    }
+
+
+    /* Values */
+
+    .about-values {
+
+        padding: 65px 20px;
+
+    }
+
+
+    .about-values-grid {
+
+        margin-top: 35px;
+
+    }
+
+
+    .about-value-card {
+
+        padding: 25px;
+
+    }
+
+
+    /* CTA */
+
+    .about-cta {
+
+        padding: 65px 20px;
+
+    }
+
+
+    .about-cta h2 {
+
+        font-size: 1.7rem;
+
+    }
+
+}

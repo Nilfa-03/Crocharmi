@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | Crocharmi</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body class="auth-page">
+
+    <main class="auth-container">
+
+        <!-- Logo -->
+        <a href="../index.html" class="auth-logo">
+            CROCHARMI
+        </a>
+
+        <!-- Sign Up Card -->
+        <section class="auth-card">
+
+            <div class="auth-header">
+                <h1>Create an Account</h1>
+                <p>
+                    Sign up to continue shopping handmade crochet pieces.
+                </p>
+            </div>
+
+            <form id="signup-form">
+
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="signup-name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="signup-name"
+                        name="name"
+                        placeholder="Enter your full name"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="signup-email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="signup-email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+                    <label for="signup-password">
+                        Password
+                    </label>
+
+                    <div class="password-field">
+                        <input
+                            type="password"
+                            id="signup-password"
+                            name="password"
+                            placeholder="Create a password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            data-target="signup-password"
+                            aria-label="Show password"
+                        >
+                            Show
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Confirm Password -->
+                <div class="form-group">
+                    <label for="signup-confirm-password">
+                        Confirm Password
+                    </label>
+
+                    <div class="password-field">
+                        <input
+                            type="password"
+                            id="signup-confirm-password"
+                            name="confirm-password"
+                            placeholder="Re-enter your password"
+                            autocomplete="new-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            data-target="signup-confirm-password"
+                            aria-label="Show password"
+                        >
+                            Show
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Error / Success Message -->
+                <div
+                    id="signup-message"
+                    class="auth-message"
+                    aria-live="polite"
+                ></div>
+
+                <!-- Submit -->
+                <button
+                    type="submit"
+                    class="btn btn-primary auth-submit"
+                >
+                    Create Account
+                </button>
+
+            </form>
+
+            <!-- Sign In Link -->
+            <div class="auth-footer">
+                <p>
+                    Already have an account?
+                    <a href="signin.html">Sign In</a>
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Back to Home -->
+        <a href="../index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+    </main>
+
+    <script src="../js/shared/toast.js"></script>
+    <script src="../js/shared/modal.js"></script>
+    <script src="../js/shared/validation.js"></script>
+    <script src="../js/auth.js"></script>
+
+</body>
+</html>

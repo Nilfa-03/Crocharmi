@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details | Crocharmi</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         NAVBAR
+         ======================================== -->
+
+    <header class="navbar">
+
+        <div class="navbar-container">
+
+            <a href="../index.html" class="logo">
+                CROCHARMI
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="shop.html">
+                    Shop
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+                <div
+                    id="auth-links"
+                    class="auth-links"
+                ></div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================================
+         PRODUCT DETAILS
+         ======================================== -->
+
+    <main class="product-details-page">
+
+        <div class="container">
+
+            <a
+                href="shop.html"
+                class="back-shop"
+            >
+                ← Back to Shop
+            </a>
+
+
+            <section
+                id="product-details"
+                class="product-details"
+            >
+
+                <!-- Product Image -->
+
+                <div class="product-details-image">
+
+                    <div
+                        id="product-image-placeholder"
+                        class="product-placeholder"
+                    >
+                        Crochet Product
+                    </div>
+
+                </div>
+
+
+                <!-- Product Information -->
+
+                <div class="product-details-info">
+
+                    <p
+                        id="product-category"
+                        class="product-category"
+                    >
+                        Category
+                    </p>
+
+                    <h1 id="product-name">
+                        Product Name
+                    </h1>
+
+                    <p
+                        id="product-price"
+                        class="product-details-price"
+                    >
+                        ₱0
+                    </p>
+
+                    <p
+                        id="product-description"
+                        class="product-description"
+                    >
+                        Product description.
+                    </p>
+
+
+                    <!-- Customization -->
+
+                    <div class="customization-section">
+
+                        <h2>
+                            Customize Your Order
+                        </h2>
+
+                        <div class="form-group">
+
+                            <label for="product-color">
+                                Preferred Color
+                            </label>
+
+                            <select id="product-color">
+
+                                <option value="Natural">
+                                    Natural
+                                </option>
+
+                                <option value="Brown">
+                                    Brown
+                                </option>
+
+                                <option value="Cream">
+                                    Cream
+                                </option>
+
+                                <option value="Pink">
+                                    Pink
+                                </option>
+
+                                <option value="Custom">
+                                    Custom Color
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="product-note">
+                                Special Request
+                            </label>
+
+                            <textarea
+                                id="product-note"
+                                rows="4"
+                                placeholder="Add a note about your order..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Quantity -->
+
+                    <div class="quantity-section">
+
+                        <label for="product-quantity">
+                            Quantity
+                        </label>
+
+                        <div class="quantity-control">
+
+                            <button
+                                type="button"
+                                id="quantity-minus"
+                            >
+                                −
+                            </button>
+
+                            <input
+                                type="number"
+                                id="product-quantity"
+                                value="1"
+                                min="1"
+                                max="20"
+                            >
+
+                            <button
+                                type="button"
+                                id="quantity-plus"
+                            >
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Add To Cart -->
+
+                    <button
+                        type="button"
+                        id="add-to-cart"
+                        class="btn btn-primary add-cart-button"
+                    >
+                        Add to Cart
+                    </button>
+
+                    <div
+                        id="product-message"
+                        class="product-message"
+                        aria-live="polite"
+                    ></div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div>
+
+                    <h3>CROCHARMI</h3>
+
+                    <p>
+                        Handmade crochet pieces
+                        made with care.
+                    </p>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <a href="../index.html">
+                        Home
+                    </a>
+
+                    <a href="shop.html">
+                        Shop
+                    </a>
+
+                    <a href="about.html">
+                        About
+                    </a>
+
+                    <a href="cart.html">
+                        Cart
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Crocharmi. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/shared/navbar.js"></script>
+    <script src="../js/product.js"></script>
+
+</body>
+</html>
